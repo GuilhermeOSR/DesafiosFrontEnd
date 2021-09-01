@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    margin: 0;
+    
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+    
+}
+
+.section1 {
+    padding: 0 40px 40px ;
+    width: 60%;
+     background-image: url("images/bg-pattern-desktop.svg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.inner-container {
+    max-width: 500px;
+    margin: auto;
+}
+
+form {
+    position: relative;
+}
+
+
+
+input {
+    background-color: transparent;
+    border: 2px solid hsl(0, 36%, 70%);
+    border-radius: 50px;
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 30px;
+    height: 55px;
+}
+
+input:focus {
+    outline: none;
+    border-width: 2px hsl(0, 36%, 70%);
+    
+    box-shadow: 0px 0px 10px hsla(0, 80%, 86%, 0.5);
+}
+
+input::placeholder {
+    color: hsl(0, 36%, 70%);
+}
+
+
+form.error input {
+    border: 2px solid hsl(0, 93%, 68%);
+}
+
+
+
+button {
+    background-image: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding: 15px;
+    border: none;
+    position: absolute;
+    box-shadow: 2px 5px 10px hsla(0, 80%, 86%, 0.5);
+    top: 0;
+    right: 0;
+    width: 110px;
+    height: 55px;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    opacity: 0.6
+}
+
+.icon-error {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 120px;
+}
+
+form.error .icon-error {
+    display: block;
+}
+
+
+
+small {
+    margin-top: 20px;
+    margin-left: 30px;
+    color: hsl(0, 93%, 68%);
+    display: none;
+}
+
+form.error small {
+    display: block;
+}
+
+.section2 {
+  
+    width: 40%;
+}
+
+.bg-img {
+    background-image: url('images/hero-desktop.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.mobile-bg {
+    display: none;
+}
+
+
+.logo {
+    margin: 60px 0;
+    width: 200px;
+}
+
+
+h1 {
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 1.2;
+    letter-spacing: 20px;
+    color: hsl(0, 6%, 24%);
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+
+h1 span {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+    
+}
+
+p {
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: hsl(0, 36%, 70%);
+    margin: 30px 0;
+    
+}
+
+@media screen and (max-width: 700px) {
+    .section1 {
+        width: 100%;
+
+    }
+
+    
+    .section2 {
+        display: none;
+    }
+    
+    .logo {
+        margin: 30px 0;
+        width: 100px;
+    }
+    
+    .mobile-bg {
+        display: block;
+        margin-left: -40px;
+        margin-right: -40px;
+        width: calc(100% + 80px);
+    }
+    
+    h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    p {
+        margin: 32px;
+        text-align: center;
+    }
+    
+    
+    
+body {
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-size: cover;
+    background-position: center left;
+    margin: 0;
+    
+}
+}
+
