@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(0, 0%, 95%);
+    font-size: 15px;
+    padding-top: 210px;
+}
+
+main {
+    max-width: 920px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.orange {
+    background: hsl(31, 77%, 52%);
+    padding: 30px 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.blue {
+    background: hsl(184, 100%, 22%);
+    padding: 30px 50px;
+    
+}
+.green {
+    background: hsl(179, 100%, 13%);
+    padding: 30px 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.logo {
+    
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.9;
+    font-weight: 400;
+    margin-bottom: 100px;
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    background-color: hsl(0, 0%, 95%);
+    padding: 12px 35px;
+    border-radius: 50px;
+    border: 2px solid hsl(0, 0%, 95%) ;
+    cursor: pointer;
+    
+}
+button:hover {
+    background-color: transparent;
+}
+
+#btn1 {
+    color: hsl(31, 77%, 52%);
+}
+
+#btn1:hover {
+    color: hsl(0, 0%, 95%);
+}
+
+#btn2 {
+    color: hsl(184, 100%, 22%);
+}
+
+#btn2:hover {
+    color: hsl(0, 0%, 95%);
+}
+
+#btn3 {
+    color: hsl(179, 100%, 13%);
+}
+
+#btn3:hover {
+    color: hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width: 575px) {
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    main {
+       display: block;
+    }
+    
+    .orange {
+       border-radius: 0;
+    }
+    
+    .green {
+       border-radius: 0px;
+    }
+
+    
+    
+}
+
+@media screen and (max-width: 350px) {
+    button {
+        font-size: 10px;
+        
+    }
+
+    p {
+        width: 76%;
+        margin-bottom: 20px;
+    }
+ 
+}
+
