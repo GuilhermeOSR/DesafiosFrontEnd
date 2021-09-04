@@ -103,7 +103,7 @@ button:hover {
     
     body {
         margin: 0;
-        padding: 0;
+        padding: 0px;
     }
     main {
        display: block;
@@ -120,6 +120,12 @@ button:hover {
     
     
 }
+
+.credit {
+    text-align: center;
+    color: black;
+}
+
 
 @media screen and (max-width: 350px) {
     button {
