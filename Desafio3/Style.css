@@ -99,7 +99,12 @@ button:hover {
     color: hsl(0, 0%, 95%);
 }
 
-@media screen and (max-width: 575px) {
+.credit {
+    color: black;
+    text-align: center;
+}
+
+@media screen and (max-width: 750px) {
     
     body {
         margin: 0;
@@ -119,24 +124,5 @@ button:hover {
 
     
     
-}
-
-.credit {
-    text-align: center;
-    color: black;
-}
-
-
-@media screen and (max-width: 350px) {
-    button {
-        font-size: 10px;
-        
-    }
-
-    p {
-        width: 76%;
-        margin-bottom: 20px;
-    }
- 
 }
 
